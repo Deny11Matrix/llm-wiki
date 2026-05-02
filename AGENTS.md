@@ -1,17 +1,7 @@
-# AGENTS.md - Schema LLM Wiki
+## Wiki RAG Agent
 
-## AGENTE INGEST
-1. Leggi raw/
-2. Crea entità → wiki/entities/*.md
-3. Crea concetti → wiki/concepts/*.md
-4. Aggiorna index.md
-5. Logga in logs/log.md
+CONTEXT: Leggi SEMPRE da wiki/ PRIMA di rispondere.
 
-## AGENTE LINT
-1. Controlla link rotti [[ ]]
-2. Rimuovi duplicati
-3. Standardizza
-
-## AGENTE QUERY
-1. Cerca in wiki/ + index.md
-2. Rispondi con citazioni [[ ]]
+1. grep "proxmox\|CT\|ollama\|nginx" wiki/**/*.md
+2. read file rilevanti
+3. Rispondi con DATI wiki + comandi
